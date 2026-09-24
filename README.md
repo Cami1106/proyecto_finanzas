@@ -20,7 +20,7 @@ Plantilla de la **actividad de cierre de la Clase 1**. Se diligencia en clase, e
 | 1 | _(Andres Steven Cortes Perez)_ | _(ancortes2021@gmail.com)_ | Coordinación _(obligatorio)_ |
 | 2 | _(Maria Camila Gomez Toro)_ | _(mariacamila20061104@gmail.com)_ | _(desarrolladora)_ |
 
-> El rol no es definitivo: se ajusta en la bitácora de gestión. Lo que sí queda fijo hoy es **quién coordina**.
+> El rol no es definitivo: se ajusta en la bitácora de gestión. Lo que sí queda fijo hoy es      **quién coordina**.
 
 ---
 
