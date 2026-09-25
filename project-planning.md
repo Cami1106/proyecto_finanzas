@@ -60,7 +60,7 @@ Explicar cómo se organiza el equipo **dentro** de ellas.
 | --- | --- | --- |
 | *(Maria Camila Gomez Toro)* | *(e.g. Product Owner)* | *(definir las tareas)* |
 | *(Andres Steven Cortes Perez)* | *(e.g. Scrum Master)* | *(organizar el trabajo y revisar los avances.)* |
-| *(Andres Steven Cortes Perez)* | *(Desarrollador)* | *(desarrollar las funcionalidades)* |
+| *(Andres Steven Cortes Perez y Maria Camila Gomez Toro)* | *(Desarrollador)* | *(desarrollar las funcionalidades)* |
 
 **Definición de Hecho** *(mínimo tres condiciones verificables para que una tarjeta pase a Hecho)*:
 
@@ -94,11 +94,11 @@ Primera entrada de la bitácora de gestión.
 
 | Campo | Respuesta |
 | --- | --- |
-| Fecha | *(completar)* |
-| Asistentes | *(completar)* |
-| Decisiones tomadas | *(completar)* |
-| Compromisos *(quién, qué)* | *(completar)* |
-| Bloqueos o riesgos | *(completar)* |
+| Fecha | *(14/09/26)* |
+| Asistentes | *(Andres Steven Cortes Perez y Maria Camila Gomez Toro)* |
+| Decisiones tomadas | *(Definir el problema del proyecto, establecer el alcance inicial de la aplicación y trabajar con la metodología Scrum.)* |
+| Compromisos *(quién, qué)* | *(Andres Steven: definir requisitos y organizar el tablero de GitHub. Maria Camila: apoyar la definición del alcance y la planificación del proyecto.)* |
+| Bloqueos o riesgos | *( Falta de requisitos detallados del cliente y posibilidad de que algunos requisitos cambien durante el desarrollo.)* |
 
 ## Ejemplo diligenciado
 
