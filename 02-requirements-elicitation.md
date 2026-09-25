@@ -154,12 +154,14 @@ El equipo cliente lee la lista del punto 4 y marca cada requisito:
 | *(RF-08)* | *(❌)* | *(El cliente no lo mencionó; pasa a pregunta para el cliente)* |
 | *(RF-09)* | *(❌)* | *( El cliente no lo mencionó; pasa a pregunta para el cliente.)* |
 
-
+| Requisito | Marca | Corrección del cliente |
+|---|---|---|
 | *(RNF-01)* | *(❌)* | *( El cliente no indicó un tiempo máximo de respuesta de 2 segundos. Pasa a pregunta para el cliente.)* |
 | *(RNF-02)* | *(❌)* | *( El cliente no indicó que el registro de un gasto deba hacerse en máximo 1 minuto. Pasa a pregunta para el cliente.)* |
 | *(RNF-03)* | *(✏️)* | *( El cliente indicó que desea probar avances y sugerir cambios, pero no estableció que los cambios deban implementarse sin afectar las funciones existentes.)* |
 | *(RNF-04)* | *(✏️)* | *(  El cliente indicó que se manejarán datos personales, pero no estableció que el 99% de la información financiera deba requerir autenticación.)* |
 | *(RNF-05)* | *(✏️)* | *( El cliente indicó que una falla puede afectar al usuario, pero no estableció el porcentaje del 99% como nivel de fiabilidad.)* |
+
 
 - Los ❌ no se borran: pasan a **preguntas para el cliente del proyecto**. Pueden ser requisitos válidos que el cliente no mencionó, o suposiciones del equipo.
 
