@@ -109,6 +109,9 @@ Convertir las notas propias en requisitos candidatos. Todavía no es el catálog
 | RF-07 | *(Mostrar el total gastado)* | *(Must)* | *(P4)* |
 | RF-08 | *(Calcular el saldo disponible)* | *(Must)* | *(P1)* |
 | RF-09 | *(Generar alertas)* | *(Should)* | *(P4)* |
+| RF-10 | *(Gestionar actualizaciones y correcciones del sistema)* | *(Must)* | *(P3)* |
+| RF-11 | *(Creacion de usuario apartir del correo y contraseña )* | *(Must)* | *(P3)* |
+| RF-12 | *(Sistema de login)* | *(Must)* | *(P3)* |
 | … | | | |
 
 **Requisitos no funcionales candidatos** *(mínimo 3, con métrica)*:
