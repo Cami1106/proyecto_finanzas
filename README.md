@@ -61,15 +61,18 @@ _(Dado que hemos vivido la experiencia de no controlar nuestros gastos financier
 
 **Tres cosas que el sistema sí debe hacer**:
 
-1. _(Registrar ingresos y gastos)
-2. _(Visualizar las estadisticas de los gastos)
-3. _(Clasificar los gastos por categorias segun las prioridades)
+1. _(Registrar y consultar ingresos y gastos personales.)
+2. _(Clasificar los gastos mediante categorías.)
+3. _(Consultar información y estadísticas que permitan entender cómo se está utilizando el dinero.)
+4. _(Llevar un presupuesto mensual.)
+4. _(Consultar el saldo disponible a partir de los ingresos y gastos registrados.)
 
 **Tres cosas que el sistema no va a hacer**:
 
-1. _(No filtrar los datos de las demas personas al publico)
-2. _(No brindar asesorias financieras profesionales)
-3. _(No tendra acceso directo a las cuentas bancarias de los usuarios)
+1. _(Acceder directamente a cuentas bancarias del usuario.)
+2. _(Realizar transferencias, pagos u otras operaciones bancarias.)
+3. _(Brindar asesoría financiera profesional o recomendaciones de inversión.)
+4. _(Permitir que otros usuarios consulten la información financiera privada de una persona.)
 
 ---
 

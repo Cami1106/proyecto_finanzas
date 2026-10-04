@@ -21,7 +21,7 @@ Ubicar el proyecto en cada factor **con un dato concreto del dominio**, no con u
 | Personal *(experiencia del equipo)* | *(plan)* | *(El equipo de trabajo esta compuesto por personas con poca experiencia en el desarrollo de software)* |
 | Cultura *(del cliente u organización)* | *(agil)* | *(El usuario acepta revisar avances parciales y dar su opinion sobre las funciones de registro y control de gastos)* |
 | Acceso al cliente | *(agil)* | *(El cliente puede probar la funcionalidad y comunicar cambios que necesite)* |
-| Regulación | *(plan)* | *(La aplicacion debe considerar valores financieros como la TRM y la tasa efectiva anual, los cuales deben manejarse con formulas y valores definidos.)* |
+| Regulación | *(plan)* | *(La aplicación almacenará datos personales y registros financieros asociados a cada usuario, por lo que debe considerar la Ley 1581 de 2012, relacionada con la protección y tratamiento de datos personales, y el Decreto 1074 de 2015, que reglamenta aspectos como la autorización, las políticas de tratamiento y la protección de la información almacenada. El sistema deberá restringir el acceso a la información financiera al usuario correspondiente y mantener los datos bajo condiciones de seguridad que eviten accesos no autorizados.)* |
 
 ---
 
