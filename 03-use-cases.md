@@ -55,15 +55,22 @@ Un solo diagrama con:
 
 **Imagen o enlace al diagrama:**
 
-![Diagrama de casos de uso](./diagramas/diagrama_de_uso2.png)
+![Diagrama de casos de uso](./diagramas/diagrama_de_uso_1.png)
+
+![Diagrama de casos de uso](./diagramas/diagrama_de_uso_2.png)
+
+![Diagrama de casos de uso](./diagramas/diagrama_de_uso_3.png)
+
+![Diagrama de casos de uso](./diagramas/diagrama_de_uso_4.png)
+
 
 **Justificación de las relaciones:**
 
-- \_(**CU-01 Registrar gasto `«include»` CU-04 Clasificar gasto:**  
+- (**CU-01 Registrar gasto `«include»` CU-04 Clasificar gasto:**  
   Se utiliza `«include»` porque al registrar un gasto este debe quedar asociado a una categoría, por lo que la clasificación forma parte necesaria del proceso de registro.
 
 - **CU-09 Generar alerta de presupuesto `«extend»` CU-01 Registrar gasto:**  
-  Se utiliza `«extend»` porque la alerta no se genera en todos los registros de gastos; únicamente se activa cuando el gasto registrado hace que el usuario se acerque o supere el límite del presupuesto establecido.)\_
+  Se utiliza `«extend»` porque la alerta no se genera en todos los registros de gastos; únicamente se activa cuando el gasto registrado hace que el usuario se acerque o supere el límite del presupuesto establecido.)
 
 ---
 
