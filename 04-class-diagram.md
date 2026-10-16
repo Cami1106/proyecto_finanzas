@@ -74,8 +74,8 @@ Se escribe en cada extremo de la relación: cuántos objetos de ese lado se rela
 | Usuario | RF-11, RF-12, RF-15 / CU-11, CU-12, CU-15 | Sí | Representa a la persona que utiliza el sistema y es propietaria de su información financiera. |
 | Movimiento | RF-01, RF-02, RF-03, RF-04, RF-06 / CU-01, CU-02, CU-03 | Sí | Representa un movimiento financiero registrado por el usuario y reúne información común como valor, fecha y descripción. |
 | Ingreso | RF-02 / CU-02 | Sí | Representa un tipo de movimiento que aumenta el saldo disponible del usuario. |
-| Gasto | RF-01, RF-05 / CU-01, CU-04 | Sí | Representa un tipo de movimiento que disminuye el saldo y puede asociarse a una categoría. |
-| Categoria | RF-05 / CU-04 | Sí | Permite organizar y clasificar los gastos registrados por el usuario. |
+| Gasto | RF-01, RF-05 / CU-01, CU-05 | Sí | Representa un movimiento que disminuye el saldo e incluye la categoría utilizada para clasificarlo. |
+| Categoria | RF-05 / CU-05 | No | La categoría se modela como un atributo de Gasto, ya que el alcance actual no requiere administrar categorías como entidades independientes. |
 | Presupuesto | RF-09, RF-10 / CU-06, CU-09 | Sí | Representa el límite de gasto definido por el usuario para un periodo mensual. |
 | AlertaPresupuesto | RF-10 / CU-09 | Sí | Representa el aviso generado cuando el usuario se acerca o supera el presupuesto establecido. |
 | AnalisisIA | RF-14 / CU-14 | Sí | Guarda el resultado generado por la inteligencia artificial a partir de los movimientos financieros del usuario. |

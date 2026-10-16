@@ -33,7 +33,7 @@ Se trabaja en clase, por equipo.
 | CU-07 | _(Consultar total gastado)_             | _(Usuario)_     | _(RF-07)_    |
 | CU-08 | _(Calcular saldo disponible)_           | _(Usuario)_     | _(RF-08)_    |
 | CU-09 | _(Crear presupuesto mensual)_           | _(Usuario)_     | _(RF-09)_    |
-| CU-10 | _(Consultar alerta de presupuesto)_     | _(Usuario)_     | _(RF-10)_    |
+| CU-10 | _(Generar alerta de presupuesto)_     | _(Usuario)_     | _(RF-10)_    |
 | CU-11 | _(Crear cuenta de usuario)_             | _(Usuario)_     | _(RF-11)_    |
 | CU-12 | _(Iniciar sesión)_                      | _(Usuario)_     | _(RF-12)_    |
 | CU-13 | _(Visualizar estadísticas de gastos)_   | _(Usuario)_     | _(RF-13)_    |
@@ -66,11 +66,11 @@ Un solo diagrama con:
 
 **Justificación de las relaciones:**
 
-- (**CU-01 Registrar gasto `«include»` CU-04 Clasificar gasto:**  
-  Se utiliza `«include»` porque al registrar un gasto este debe quedar asociado a una categoría, por lo que la clasificación forma parte necesaria del proceso de registro.
+- (**CU-01 Registrar gasto `«include»` CU-05 Clasificar gasto:**  
+  Se utiliza `«include»` porque al registrar un gasto este debe quedar asociado a una categoría.
 
-- **CU-09 Generar alerta de presupuesto `«extend»` CU-01 Registrar gasto:**  
-  Se utiliza `«extend»` porque la alerta no se genera en todos los registros de gastos; únicamente se activa cuando el gasto registrado hace que el usuario se acerque o supere el límite del presupuesto establecido.)
+- **CU-10 Generar/recibir alerta de presupuesto `«extend»` CU-01 Registrar gasto:**  
+  Se utiliza `«extend»` porque la alerta únicamente se presenta cuando el nuevo gasto provoca que el usuario se acerque o supere el límite de su presupuesto..)
 
 ---
 
@@ -81,7 +81,7 @@ Los tres casos que el prototipo implementa **de punta a punta** _(de la interfaz
 | Caso                                         | Por qué es crítico _(valor / frecuencia / riesgo técnico)_                                                                                                                                                                         |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _(CU-01 Registrar gasto)_                    | _(Es una de las funciones principales del sistema y será utilizada con frecuencia. Permite almacenar la información necesaria para el control financiero y alimenta otras funciones como categorías, presupuesto y estadísticas.)_ |
-| _(CU-06 Crear presupuesto mensual)_          | _(Es importante porque permite establecer un límite de gasto para el usuario y sirve como base para determinar cuándo deben generarse alertas relacionadas con el presupuesto.)_                                                   |
+| _(CU-09 Crear presupuesto mensual)_          | _(Es importante porque permite establecer un límite de gasto para el usuario y sirve como base para determinar cuándo deben generarse alertas relacionadas con el presupuesto.)_                                                   |
 | _(CU-14 Generar análisis financiero con IA)_ | _(Es el componente de inteligencia artificial del proyecto. Tiene mayor riesgo técnico porque depende de un proveedor externo y debe manejar situaciones como falta de respuesta, límite de cuota o respuestas inválidas.)_        |
 
 - **Máximo uno** puede ser el caso de IA; los otros dos son funcionalidad con persistencia propia.
@@ -206,24 +206,23 @@ Tabla 3
 
 **Columna de caso de uso de la matriz** _(la que se abrió en la Clase 3)_:
 
-| Requisito                                      | Fuente       | Caso de uso                                    |
-| ---------------------------------------------- | ------------ | ---------------------------------------------- |
-| RF-01 Registrar gastos                         | _(P3)_       | _(CU-01 Registrar gasto)_                      |
-| RF-02 Registrar ingresos                       | _(P3)_       | _(CU-02 Registrar ingreso)_                    |
-| RF-03 Modificar ingresos y gastos registrados  | _(P5, P9)_   | _(CU-03 Gestionar movimientos registrados)_    |
-| RF-04 Eliminar ingresos y gastos registrados   | _(P5, P9)_   | _(CU-03 Gestionar movimientos registrados)_    |
-| RF-05 Clasificar gastos por categorías         | _(P3, P4)_   | _(CU-04 Clasificar gasto)_                     |
-| RF-06 Consultar historial de ingresos y gastos | _(P4)_       | _(CU-03 Gestionar movimientos registrados)_    |
-| RF-07 Consultar el total gastado               | _(P4)_       | _(CU-08 Consultar saldo y resumen financiero)_ |
-| RF-08 Calcular y mostrar el saldo disponible   | _(P1, P4)_   | _(CU-08 Consultar saldo y resumen financiero)_ |
-| RF-09 Crear un presupuesto mensual             | _(P10)_      | _(CU-06 Crear presupuesto mensual)_            |
-| RF-10 Generar alertas de presupuesto           | _(P10, P11)_ | _(CU-09 Generar alerta de presupuesto)_        |
-| RF-11 Crear una cuenta de usuario              | _(P13)_      | _(CU-11 Crear cuenta de usuario)_              |
-| RF-12 Autenticarse en el sistema               | _(P9, P13)_  | _(CU-12 Iniciar sesión)_                       |
-| RF-13 Visualizar estadísticas de gastos        | _(P4)_       | _(CU-08 Consultar saldo y resumen financiero)_ |
-| RF-14 Generar análisis financiero con IA       | _(P15)_      | _(CU-14 Generar análisis financiero con IA)_   |
-| RF-15 Cambiar contraseña                       | _(P13)_      | _(CU-15 Cambiar contraseña)_                   |
-| …                                              |              |                                                |
+| Requisito | Fuente | Caso de uso |
+| --- | --- | --- |
+| RF-01 Registrar gastos | P3 | CU-01 Registrar gasto |
+| RF-02 Registrar ingresos | P3 | CU-02 Registrar ingreso |
+| RF-03 Modificar ingresos y gastos | P5, P9 | CU-03 Modificar movimiento financiero |
+| RF-04 Eliminar ingresos y gastos | P5, P9 | CU-04 Eliminar movimiento financiero |
+| RF-05 Clasificar gastos | P3, P4 | CU-05 Clasificar gasto |
+| RF-06 Consultar historial | P4 | CU-06 Consultar historial de movimientos |
+| RF-07 Consultar total gastado | P4 | CU-07 Consultar total gastado |
+| RF-08 Calcular saldo disponible | P1, P4 | CU-08 Calcular saldo disponible |
+| RF-09 Crear presupuesto mensual | P10 | CU-09 Crear presupuesto mensual |
+| RF-10 Generar alerta de presupuesto | P10, P11 | CU-10 Generar alerta de presupuesto |
+| RF-11 Crear cuenta de usuario | P13 | CU-11 Crear cuenta de usuario |
+| RF-12 Autenticarse | P9, P13 | CU-12 Iniciar sesión |
+| RF-13 Visualizar estadísticas | P4 | CU-13 Visualizar estadísticas de gastos |
+| RF-14 Generar análisis con IA | P15, P15a | CU-14 Generar análisis financiero con IA |
+| RF-15 Cambiar contraseña | P13a | CU-15 Cambiar contraseña |
 
 **Huecos detectados:**
 

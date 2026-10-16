@@ -26,7 +26,7 @@ Plantilla de la **actividad de cierre de la Clase 1**. Se diligencia en clase, e
 
 ## 2. Dominio propuesto
 
-**Dominio:** _(una línea — el sector o la actividad; e.g. "gestión de inventario para una tienda de barrio")_
+**Dominio:** _(Gestion de finanzas personales")_
 
 **Problema que se quiere resolver** _(máximo tres líneas: qué pasa hoy, a quién le duele y por qué el proceso actual no alcanza)_:
 
@@ -65,7 +65,7 @@ _(Dado que hemos vivido la experiencia de no controlar nuestros gastos financier
 2. _(Clasificar los gastos mediante categorías.)
 3. _(Consultar información y estadísticas que permitan entender cómo se está utilizando el dinero.)
 4. _(Llevar un presupuesto mensual.)
-4. _(Consultar el saldo disponible a partir de los ingresos y gastos registrados.)
+5. _(Consultar el saldo disponible a partir de los ingresos y gastos registrados.)
 
 **Tres cosas que el sistema no va a hacer**:
 
