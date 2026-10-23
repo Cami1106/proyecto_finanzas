@@ -4,5 +4,9 @@ class Usuario:
         self.id_usuario = id_usuario
         self.correo = correo
         self.contrasena = contrasena
-        self.movimientos = []
-        self.presupuestos = []
+
+    def autenticar(self, contrasena):
+        return self.contrasena == contrasena
+
+    def cambiar_contrasena(self, nueva_contrasena):
+        self.contrasena = nueva_contrasena
