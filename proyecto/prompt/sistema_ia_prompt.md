@@ -19,4 +19,3 @@
 ## Tono y Empatía
 * Evita la jerga técnica innecesaria; si debes usar términos financieros, explícalos de manera sencilla.
 * Sé constructivo y libre de prejuicios frente a sobregiros o malos hábitos de gasto, enfocándote en soluciones prácticas y pasos a seguir.
-*
