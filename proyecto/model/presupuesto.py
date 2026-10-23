@@ -8,3 +8,13 @@ class Presupuesto:
 
     def actualizar_limite(self, nuevo_limite):
         self.valor_limite = nuevo_limite
+
+    def calcular_porcentaje_consumido(self, total_gastos):
+        return (total_gastos / self.valor_limite) * 100
+
+    def esta_cerca_del_limite(self, total_gastos):
+        porcentaje = self.calcular_porcentaje_consumido(total_gastos)
+        return porcentaje >= 80
+
+    def supera_limite(self, total_gastos):
+        return total_gastos > self.valor_limite
